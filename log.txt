@@ -1,3 +1,12 @@
+134ef1c task 2.4
+a681973 task 2.3
+67ca50f task 2.2
+31dcdf2 task 2.1
+aa2e30b task 1.2
+78afa10 task 1.1
+ddb316d task 1
+4bae266 task 1
+fec5d1b Task 1.2 update git log
 2b4f164 fixed tests for the not-for-credit tasks; parameter ordering and ensuring consistent line endings.
 ff5004e adding shortcut keys for Inline Variable (Re: Piazza question)
 b545fe2 clarifying extracted method names in README.md
