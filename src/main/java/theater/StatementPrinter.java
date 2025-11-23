@@ -137,3 +137,27 @@ public class StatementPrinter {
         return result;
     }
 
+    /**
+     * Compute the total amount owed for this invoice.
+     *
+     * @return the total amount, in cents
+     */
+    private int getTotalAmount() {
+        int result = 0;
+        for (Performance performance : invoice.getPerformances()) {
+            result += getAmount(performance);
+        }
+        return result;
+    }
+
+    /**
+     * Format the given amount as US dollars.
+     *
+     * @param amount the amount in cents
+     * @return the amount formatted as a US dollar string
+     */
+    private String usd(int amount) {
+        final NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.US);
+        return formatter.format((double) amount / Constants.PERCENT_FACTOR);
+    }
+}
