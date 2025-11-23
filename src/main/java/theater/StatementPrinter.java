@@ -1,8 +1,4 @@
-package theater;
 
-import java.text.NumberFormat;
-import java.util.Locale;
-import java.util.Map;
 
 /**
  * This class generates a statement for a given invoice of performances.
